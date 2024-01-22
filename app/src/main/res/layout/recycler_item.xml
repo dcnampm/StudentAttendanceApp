@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/recyclerImage"
+        android:scaleType="centerCrop"
+        android:background="@drawable/border_image"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:paddingLeft="8dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toRightOf="@id/recyclerImage">
+        <TextView
+            android:id="@+id/recyclerLocation"
+            android:layout_width="280dp"
+            android:layout_height="36dp"
+            android:text="location"
+            android:textColor="@color/lavender"
+            android:textSize="12dp"
+            tools:layout_editor_absoluteX="113dp"
+            tools:layout_editor_absoluteY="4dp" />
+
+        <TextView
+            android:id="@+id/recyclerCaption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="caption"
+            android:textColor="@color/lavender"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/recyclerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:textColor="@color/lavender"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
